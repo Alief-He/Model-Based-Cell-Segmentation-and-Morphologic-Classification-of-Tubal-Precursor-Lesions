@@ -1,0 +1,17 @@
+# Ignore everything by default
+*
+
+# Allow traversal into directories
+!*/
+
+# Track Python files
+!*.py
+
+# Track gitignore
+!.gitignore
+
+# Completely ignore Conda environments
+conda/
+
+# Track requirements.txt
+!requirements.txt

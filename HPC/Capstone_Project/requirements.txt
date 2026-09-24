@@ -1,3 +1,36 @@
+# Project dependencies: current scripts, old_files/ and existing tests/.
+# Install with: python -m pip install -r requirements.txt
+# Python standard-library modules and local project modules are not pip packages.
+
+# Direct dependencies (including CellViT invoked with python -m cellvit.detect_cells).
+# Numeric data, feature processing and clustering
+numpy<2
+pandas
+scipy
+scikit-learn
+joblib
+
+# Static figures and offline interactive 3D PCA
+matplotlib
+plotly
+
+# Image processing, whole-slide images and registration
+pillow
+opencv-python==4.7.0.72
+opencv-python-headless==4.7.0.72
+scikit-image
+tifffile
+openslide-python
+openslide-bin
+SimpleITK>=2.3
+
+# CellViT CLI and legacy Cellpose scripts
+cellvit
+cellpose
+torch
+tqdm
+
+# Additional dependencies retained from the existing project environment.
 affine
 aiohappyeyeballs
 aiohttp
@@ -6,8 +39,6 @@ aiosignal
 asciitree
 async-timeout
 attrs
-cellpose
-cellvit
 certifi
 cffi
 charset-normalizer
@@ -50,7 +81,6 @@ lazy-loader
 llvmlite
 MarkupSafe
 marshmallow
-matplotlib
 mpmath
 msgpack
 multidict
@@ -58,14 +88,9 @@ natsort
 networkx
 numba
 numcodecs
-numpy
 ome-types
 opencensus
 opencensus-context
-opencv-python
-opencv-python-headless
-openslide-bin
-openslide-python
 opentelemetry-api
 opentelemetry-exporter-prometheus
 opentelemetry-proto
@@ -74,9 +99,7 @@ opentelemetry-semantic-conventions
 opentile
 opt_einsum
 packaging
-pandas
 pathopatch
-pillow
 platformdirs
 prometheus_client
 propcache
@@ -105,19 +128,14 @@ requests
 retrying
 roifile
 rpds-py
-scikit-image
-scipy
 segment-anything
 shapely
 six
 smart_open
 sympy
-tifffile
 tiffslide
-torch
 torchaudio
 torchvision
-tqdm
 typing_extensions
 tzdata
 ujson

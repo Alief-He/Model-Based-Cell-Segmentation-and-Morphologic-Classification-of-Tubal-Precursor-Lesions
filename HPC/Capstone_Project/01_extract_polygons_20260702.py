@@ -125,6 +125,7 @@ PARAMS = dict(
 
 # I/O folders
 IMAGE_DIR = "../../../Image20260610"
+#IMAGE_DIR = "../../../p53"
 XML_DIR   = "../../../xml20260610"
 SAVE_DIR  = f"./polyepi_L{PARAMS['level']}"
 DEBUG_DIR = "./polyepi_debug"
